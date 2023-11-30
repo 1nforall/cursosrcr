@@ -1,0 +1,66 @@
+@import url("https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@350&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@400&display=swap");
+
+*
+{
+    margin: 0;
+    padding: 0;
+    font-family: "Josefin Sans";
+}
+
+/* Título */
+div#icone
+{
+    position: relative;
+    padding: 2vw;
+}
+
+div#icone > img
+{
+    width: 60%;
+}
+
+/* Corpo */
+section
+{
+    min-height: 300px;
+    font-size: 2vw;
+    line-height: 3vw;
+}
+
+section p
+{ padding-top: 5vw; }
+
+section ul
+{ padding: 5vw 0 0 2vw; }
+
+section div
+{
+    padding: 20px;
+}
+
+section div.separador
+{ padding: 6vw; }
+
+section div.destaque
+{
+    background: rgba(0, 0, 0, .6);
+    color: white;
+}
+
+/* Rodapé */
+footer
+{
+    font-size: 2vw;
+    padding: 4vw;
+    line-height: 5vw;
+}
+
+@media (max-width: 700px)
+{
+    section, footer
+    { font-size: 3vw; }
+
+    section
+    { line-height: 5vw; }
+}

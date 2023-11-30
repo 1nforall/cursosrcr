@@ -1,0 +1,25 @@
+/* Cabeçalho */
+header
+{
+    background-color: rgb(150, 150, 255);
+}
+
+/* Foto da seção 2 */
+section:nth-child(2)
+{
+    background: url("../img/info.jpg") no-repeat left center fixed;
+    background-size: cover;
+}
+
+/* Rodapé */
+footer
+{ background-color: rgb(150, 150, 255); }
+
+footer a
+{
+    color: rgb(0, 0, 0);
+    transition: color .75s;
+}
+
+footer a:hover
+{ color: blue; }
