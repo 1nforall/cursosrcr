@@ -54,3 +54,15 @@ a:hover img:first-child
 
 a:hover img:not(:first-child)
 { display: block; }
+
+@media (max-width: 400px)
+{
+    img
+    { width: 60% }
+}
+
+@media (max-width: 900px) and (min-width: 400px)
+{
+    img
+    { width: 50% }
+}
