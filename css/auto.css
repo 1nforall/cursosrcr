@@ -11,10 +11,16 @@ nav ul li a:hover
     color: rgb(150, 255, 150);
 }
 
-/* Foto da seção 2 */
-section:nth-child(2)
+/* Fotos */
+section:first-child
 {
-    background: url("../img/auto.jpg") no-repeat center center fixed;
+    background: url("../img/fundo/auto/1.jpg") no-repeat bottom fixed;
+    background-size: cover;
+}
+
+section:last-child
+{
+    background: url("../img/fundo/auto/2.jpg") no-repeat bottom fixed;
     background-size: cover;
 }
 

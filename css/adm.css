@@ -21,7 +21,7 @@ section:first-child
 
 section:last-child
 {
-    background: url("../img/fundo/adm/2.jpg") no-repeat center center fixed;
+    background: url("../img/fundo/adm/2.jpg") no-repeat bottom fixed;
     background-size: cover;
 }
 

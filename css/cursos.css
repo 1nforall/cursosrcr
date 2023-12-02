@@ -1,0 +1,68 @@
+*
+{
+    margin: 0;
+    padding: 0;
+}
+
+body, html, main
+{
+    width: 100vw;
+    height: 100vh;
+}
+
+main
+{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+}
+
+a
+{
+    display: grid;
+    align-items: center;
+    justify-items: center;
+    transition: background-color .5s;
+}
+
+#adm
+{ background-color: rgb(255, 255, 150); }
+
+#auto
+{ background-color: rgb(150, 255, 150); }
+
+#eletro
+{ background-color: rgb(255, 150, 150); }
+
+#info
+{ background-color: rgb(150, 150, 255); }
+
+img
+{ width: 40%; }
+
+img:hover
+{ cursor: pointer; }
+
+a img:not(:first-child)
+{ display: none; }
+
+#adm:hover, #auto:hover, #eletro:hover, #info:hover
+{ background-color: white; }
+
+a:hover img:first-child
+{ display: none; }
+
+a:hover img:not(:first-child)
+{ display: block; }
+
+@media (max-width: 400px)
+{
+    img
+    { width: 60% }
+}
+
+@media (max-width: 900px) and (min-width: 400px)
+{
+    img
+    { width: 50% }
+}
