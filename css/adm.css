@@ -15,13 +15,13 @@ nav ul li a:hover
 /* Fotos */
 section:first-child
 {
-    background: url("../img/fundo/adm/1.jpg") no-repeat left center fixed;
+    background: url("../img/fundo/adm/1.jpg") no-repeat bottom fixed;
     background-size: cover;
 }
 
 section:last-child
 {
-    background: url("../img/fundo/adm/2.jpg") no-repeat left center fixed;
+    background: url("../img/fundo/adm/2.jpg") no-repeat center center fixed;
     background-size: cover;
 }
 
