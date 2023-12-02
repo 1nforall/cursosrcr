@@ -4,6 +4,14 @@ header
     background-color: rgb(150, 150, 255);
 }
 
+
+/* Menu */
+nav ul li a:hover
+{
+    background-color: rgba(0, 0, 0, 0.6);
+    color: rgb(150, 150, 255);
+}
+
 /* Foto da seção 2 */
 section:nth-child(2)
 {

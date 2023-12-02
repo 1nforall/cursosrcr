@@ -1,26 +1,68 @@
-@import url("https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@350&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@400&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@300&display=swap");
+
+:root
+{
+    --font1: "Montserrat";
+    --font2: "Poppins";
+}
 
 *
 {
     margin: 0;
     padding: 0;
-    font-family: "Josefin Sans";
 }
 
 /* Título */
-div#icone
+header
 {
-    position: relative;
-    padding: 2vw;
+    position: fixed;
+    font-family: var(--font2);
+    font-weight: bold;
+    font-size: 2vw;
+    padding: 1vw;
+    width: 100vw;
+    grid-template-columns: 8fr 2fr;
+    align-items: baseline;
 }
 
-div#icone > img
+div.cabecalho
+{ position: relative; }
+
+/* Menu */
+nav
 {
-    width: 60%;
+    position: absolute;
+    font-size: 1.5vw;
+    right: 3vw;
+    top: .5vw;
+}
+
+nav ul
+{
+    list-style: none;
+    list-style-type: none;
+}
+
+nav ul li
+{
+    display: inline-block;
+    padding: 0 .5vw;
+}
+
+nav ul li a
+{
+    text-decoration: none;
+    color: black;
+    padding: .2vw .6vw;
+    border: .1vw rgba(0, 0, 0, 0.2) solid;
+    transition: background-color .2s, color .5s;
 }
 
 /* Corpo */
+main
+{ font-family: var(--font1), sans-serif; }
+
 section
 {
     min-height: 300px;
@@ -28,29 +70,51 @@ section
     line-height: 3vw;
 }
 
+section:first-child p
+{ text-indent: 8vw;}
+
 section p
-{ padding-top: 5vw; }
+{ text-align: justify; }
 
-section ul
-{ padding: 5vw 0 0 2vw; }
-
-section div
+section:not(:last-child) ul
 {
-    padding: 20px;
+    padding: 5vw 0 0 2vw;
+    list-style-position: inside;
 }
 
 section div.separador
 { padding: 6vw; }
 
+section:first-child div.separador
+{ padding-top: 10vw; }
+
 section div.destaque
 {
-    background: rgba(0, 0, 0, .6);
-    color: white;
+    box-shadow: 0 0 7px rgba(0, 0, 0, .7);
+    border-radius: 10px;
+    padding: 2vw;
 }
+
+section div.destaque_img
+{
+    background: rgba(0, 0, 0, .8);
+    color: white;
+    padding: 2vw;
+}
+
+section fieldset
+{ padding: 2vw; }
+
+section legend
+{ padding: .5vw }
+
+section fieldset ul
+{ list-style-position: inside; }
 
 /* Rodapé */
 footer
 {
+    font-family: var(--font1), sans-serif;
     font-size: 2vw;
     padding: 4vw;
     line-height: 5vw;
@@ -58,9 +122,31 @@ footer
 
 @media (max-width: 700px)
 {
+    header
+    {
+        font-size: 4vw;
+        padding: 1.5vw;
+    }
+
     section, footer
+    { font-size: 3vw; }
+
+    nav
+    {
+        right: 3vw;
+        top: 1vw;
+
+    }
+
+    nav ul li a
     { font-size: 3vw; }
 
     section
     { line-height: 5vw; }
+
+    section div.destaque
+    { padding: 6vw; }
+
+    section:first-child div.separador
+    { padding-top: 15vw; }
 }

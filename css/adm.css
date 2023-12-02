@@ -2,12 +2,26 @@
 header
 {
     background-color: rgb(255, 255, 150);
+    position: fixed;
 }
 
-/* Foto da seção 2 */
-section:nth-child(2)
+/* Menu */
+nav ul li a:hover
 {
-    background: url("../img/adm.jpg") no-repeat left center fixed;
+    background-color: rgba(0, 0, 0, 0.6);
+    color: rgb(255, 255, 150);
+}
+
+/* Fotos */
+section:first-child
+{
+    background: url("../img/fundo/adm/1.jpg") no-repeat left center fixed;
+    background-size: cover;
+}
+
+section:last-child
+{
+    background: url("../img/fundo/adm/2.jpg") no-repeat left center fixed;
     background-size: cover;
 }
 
