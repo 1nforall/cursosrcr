@@ -1,3 +1,5 @@
+<img src="https://avatars.githubusercontent.com/u/152534576?v=4">
+
 # <a href="https://www.instagram.com/1nforall/">InforALL</a>
 
 ### 1. Quem Somos?
