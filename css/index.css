@@ -1,68 +1,136 @@
+@import url("https://fonts.googleapis.com/css2?family=Gugi:wght@400&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@400&display=swap");
+
 *
 {
     margin: 0;
     padding: 0;
+    outline: none;
+    border: none;
 }
 
-body, html, main
+:root
 {
-    width: 100vw;
-    height: 100vh;
+    --azul1: #537fc6;
+    --azul2: #7498ca;
+    --azul3: #a5bfe2;
+    --amarelo: #ffc728;
+    --cinza: #eff2f7;
 }
 
-main
+body, html
+{ width: 100%; }
+
+/* Cabeçalho */
+header div.separador
 {
     display: grid;
-    grid-template-columns: 1fr 1fr;
-    grid-template-rows: 1fr 1fr;
+    background: var(--azul2);
+    grid-template-columns: 3fr 7fr;
+    align-items: center;
+    padding: 2vw;
 }
 
-a
+
+header div#logo
+{
+    width: 100%;
+    margin: auto;
+}
+
+header div#logo img
+{
+    width: 100%;
+}
+
+header h1
+{
+    font-family: "Gugi";
+    font-size: 15vw;
+    padding: 2vw;
+    color: var(--cinza);
+}
+
+header h1 span
+{ color: var(--amarelo); }
+
+/* Corpo */
+main, footer
+{ font: 2vw normal, "Montserrat"; }
+
+section
+{
+    display: grid;
+    height: 100vh;
+    align-items: center;
+    text-align: justify;
+}
+
+section p
+{ text-indent: 8vw; }
+
+section div.separador
+{ padding: 10vw; }
+
+section div.destaque
 {
     display: grid;
     align-items: center;
-    justify-items: center;
-    transition: background-color .5s;
+    background: rgba(0, 0, 0, .7);
+    color: white;
+    height: 100vh;
 }
 
-#adm
-{ background-color: rgb(255, 255, 150); }
-
-#auto
-{ background-color: rgb(150, 255, 150); }
-
-#eletro
-{ background-color: rgb(255, 150, 150); }
-
-#info
-{ background-color: rgb(150, 150, 255); }
-
-img
-{ width: 40%; }
-
-img:hover
-{ cursor: pointer; }
-
-a img:not(:first-child)
-{ display: none; }
-
-#adm:hover, #auto:hover, #eletro:hover, #info:hover
-{ background-color: white; }
-
-a:hover img:first-child
-{ display: none; }
-
-a:hover img:not(:first-child)
-{ display: block; }
-
-@media (max-width: 400px)
+section:nth-child(2)
 {
-    img
-    { width: 60% }
+    background: var(--azul1);
+    color: white;
 }
 
-@media (max-width: 900px) and (min-width: 400px)
+section:nth-child(2) a
 {
-    img
-    { width: 50% }
+
+}
+
+section:last-child
+{
+    background: url("../img/fundo/internet.jpg") no-repeat left fixed;
+    background-size: cover;
+}
+
+section a
+{
+    color: var(--amarelo);
+    font-weight: bold;
+    transition: color .5s;
+}
+
+section a:hover
+{
+    color: #ffd563;
+}
+
+/* Rodapé */
+footer
+{
+    padding: 5vw;
+    line-height: 6vw;
+    background: var(--amarelo);
+}
+
+footer a
+{
+    color: black;
+    transition: color .5s, font-weight .5s;
+}
+
+footer a:hover
+{
+    color: var(--azul1);
+}
+
+@media (max-width: 700px)
+{
+    main, footer
+    { font-size: 3vw; }
 }
