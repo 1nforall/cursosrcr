@@ -31,7 +31,6 @@ header div.separador
     padding: 2vw;
 }
 
-
 header div#logo
 {
     width: 100%;
@@ -83,7 +82,7 @@ section div.destaque
 
 section:first-child
 {
-    background: url("../img/fundo/turma.jpg") no-repeat left fixed;
+    background: url("../img/fundo/turma.jpg") no-repeat bottom fixed;
     background-size: cover;
 }
 
