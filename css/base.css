@@ -89,14 +89,14 @@ section:first-child div.separador
 
 section div.destaque
 {
-    box-shadow: 0 0 7px rgba(0, 0, 0, .7);
+    box-shadow: 0 0 7px rgba(0, 0, 0, .6);
     border-radius: 10px;
     padding: 2vw;
 }
 
 section div.destaque_img
 {
-    background: rgba(0, 0, 0, .7);
+    background: rgba(0, 0, 0, .6);
     color: white;
 }
 
