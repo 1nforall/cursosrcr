@@ -81,15 +81,10 @@ section div.destaque
     height: 100vh;
 }
 
-section:nth-child(2)
+section:first-child
 {
-    background: var(--azul1);
-    color: white;
-}
-
-section:nth-child(2) a
-{
-
+    background: url("../img/fundo/turma.jpg") no-repeat left fixed;
+    background-size: cover;
 }
 
 section:last-child

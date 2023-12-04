@@ -15,7 +15,7 @@ nav ul li a:hover
 /* Fotos */
 section:first-child
 {
-    background: url("../img/fundo/info/1.jpg") no-repeat bottom fixed;
+    background: url("../img/fundo/info/1.jpg") no-repeat left fixed;
     background-size: cover;
 }
 
